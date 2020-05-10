@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".NotificationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:id="@+id/img_back"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+             >
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="Send Monthly Report"
+                       android:textStyle="bold"
+                       android:gravity="center_vertical"
+                       android:layout_centerVertical="true"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/color_demo"
+                       />
+                   <Switch
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentEnd="true"
+                       />
+
+               </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Send Stock Report"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_demo"
+                    />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Send Stock Low Notification"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_demo"
+                    />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:background="@color/colorPrimaryDark"
+                android:cursorVisible="true"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="match_parent">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:textColor="@color/color_black"
+               android:hint="Select Date"
+               android:gravity="center"
+               android:editable="false"
+               android:clickable="true"
+               android:layout_marginBottom="8dp"
+               android:layout_marginEnd="8dp"
+
+               android:layout_marginStart="8dp"
+
+               android:layout_marginTop="8dp"
+               android:id="@+id/edt_date"
+               android:textColorHint="@color/color_black"
+               android:background="@drawable/bg_roudend_withborder"
+               />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:textColor="@color/color_white"
+            android:hint="Select Root"
+            android:gravity="center"
+            android:visibility="gone"
+            android:editable="false"
+            android:clickable="true"
+            android:id="@+id/edt_root"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/spinnerTheme"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/color_white"
+            android:background="@drawable/bg_roudend_withborder"
+            />
+        //spinner for distributor
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Distributor"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_dealer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/spinnerTheme"
+            android:layout_marginStart="8dp"
+android:prompt="@string/text_select_distributor"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_roudend_withborder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+        ///spinner for routes
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Route"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_routes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/spinnerTheme"
+            android:layout_marginStart="8dp"
+            android:prompt="@string/text_select_distributor"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_roudend_withborder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+        /// spinner for stores
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Store"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_stores"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/spinnerTheme"
+            android:layout_marginStart="8dp"
+            android:prompt="@string/text_select_distributor"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_roudend_withborder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="5dp"
+             android:textColor="@color/color_red"
+             android:textStyle="bold"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:id="@+id/txt_error"
+             />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/bg_rounded_withblue"
+        android:textColor="@color/color_white"
+        android:text="Apply"
+        android:id="@+id/btn_apply"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_roudend_withborder"
+        android:textColor="@color/color_black"
+        android:text="Back"
+        android:id="@+id/btn_back"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="2.5dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

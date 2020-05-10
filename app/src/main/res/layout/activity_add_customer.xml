@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".AddCustomerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/splash_gradient"
+            android:layout_gravity="center_vertical"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:id="@+id/img_back"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Add a Customer"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:visibility="invisible"
+                android:id="@+id/add_customer"
+                android:src="@drawable/add" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:id="@+id/customer_image"
+                android:background="@drawable/user_default"
+                android:layout_height="80dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer Name"
+                    android:textColor="@color/color_black"
+                    android:inputType="text"
+
+
+                    android:id="@+id/edt_custname"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact No"
+                    android:textColor="@color/color_black"
+                  android:inputType="phone"
+                    android:id="@+id/edt_custcontactno"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Email"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Email"
+                android:textColor="@color/color_black"
+                android:inputType="textEmailAddress"
+                android:id="@+id/edt_custemail"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mailing Address"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mailing Address"
+                android:textColor="@color/color_black"
+                android:inputType="text"
+                android:id="@+id/edt_mailingaddress"
+                />
+
+            <Switch
+                android:id="@+id/switchbutton"
+                android:layout_width="wrap_content"
+                android:thumbTint="@color/colorPrimaryDark"
+                android:trackTint="@color/color_black"
+                android:checked="false"
+                android:text="Advanced Paid  "
+                android:drawablePadding="4dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount Paid"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount Paid"
+                android:textColor="@color/color_black"
+                android:inputType="number"
+                android:id="@+id/edt_amountpaid"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes"
+                android:textColor="@color/color_black"
+                android:inputType="text"
+                android:id="@+id/edt_notes"
+                />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Add a customer"
+                android:id="@+id/btn_addcustomer"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:background="@color/colorPrimaryDark"
+                android:cursorVisible="true"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

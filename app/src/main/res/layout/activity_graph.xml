@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/splash_gradient"
+            android:layout_gravity="center_vertical"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:id="@+id/img_back"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:id="@+id/txt_title"
+                android:layout_gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:id="@+id/show_map"
+                android:src="@drawable/reports" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp"
+                >
+                //// BAR CAHRT
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_barchart"
+                    >
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barchart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+                /// LINE CAHRT
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_linechart"
+                    android:visibility="gone"
+                    >
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/linechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                /// PIECAHRT
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_piechart"
+                    android:visibility="gone"
+                    >
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+android:background="@color/light_grey"
+
+             android:layout_alignParentBottom="true"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/txt_barchart"
+                        style="@style/barGrapButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="Bar"
+                        android:textColor="@color/color_white" />
+
+                    <TextView
+                        android:id="@+id/txt_linescahrt"
+                        style="@style/barGrapButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lines" />
+
+                    <TextView
+                        android:id="@+id/txt_piechart"
+                        style="@style/barGrapButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PieChart" />
+
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.salesreport">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false">
+        <activity android:name=".GraphActivity"></activity>
+        <activity android:name=".BusinessReportActivity" />
+        <activity android:name=".StockReportActivity" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".SupportActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".RepresentativeActivity" />
+        <activity android:name=".SalesActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".AddAProductActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".AddCustomerActivity" />
+        <activity android:name=".CustomerActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivty" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
